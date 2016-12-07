@@ -3,7 +3,7 @@
 namespace Elastica\QueryBuilder\DSL;
 
 use Elastica\Filter\AbstractFilter;
-use Elastica\Filter\Bool;
+use Elastica\Filter\BoolFilter;
 use Elastica\Filter\BoolAnd;
 use Elastica\Filter\BoolNot;
 use Elastica\Filter\BoolOr;
@@ -73,11 +73,11 @@ class Filter implements DSL
      * bool filter
      *
      * @link http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-bool-filter.html
-     * @return \Elastica\Filter\Bool
+     * @return \Elastica\Filter\BoolFilter
      */
     public function bool()
     {
-        return new Bool();
+        return new BoolFilter();
     }
 
     /**

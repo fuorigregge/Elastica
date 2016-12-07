@@ -12,7 +12,7 @@ use Elastica\Exception\InvalidException;
  * @author Nicolas Ruflin <spam@ruflin.com>
  * @link http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-bool-filter.html
  */
-class Bool extends AbstractFilter
+class BoolFilter extends AbstractFilter
 {
     /**
      * Must
